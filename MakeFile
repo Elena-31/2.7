@@ -1,0 +1,7 @@
+run_tests:
+    echo "before tests"
+    source $HOME/miniconda/bin/activate; \
+    conda activate skillbox2; \
+    pytest; \
+    conda deactivate; \
+    echo "after tests"
